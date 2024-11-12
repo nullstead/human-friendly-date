@@ -6,10 +6,10 @@ A simple JavaScript library to format dates in a human-friendly way, returning r
 
 ```bash
 npm install human-friendly-date
+```
 
 
-
-Usage
+## Usage
 
 The HumanFriendlyDate function provides a convenient way to format timestamps into human-readable strings, including both relative time (e.g., "5 seconds ago", "in 1 hour") and absolute dates (e.g., "Tuesday, November 12, 2024"). It also handles errors gracefully and can be extended for future use cases.
 
