@@ -1,5 +1,5 @@
 {
-  "name": "human-friendly-date",
+  "name": "@nullstead/human-friendly-date",
   "version": "1.0.0",
   "description": "A pretty simple library to format dates and times in human-readable formats.",
   "main": "src/index.js",
