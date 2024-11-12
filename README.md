@@ -10,7 +10,6 @@ npm install human-friendly-date
 
 
 ## Usage
-
 The HumanFriendlyDate function provides a convenient way to format timestamps into human-readable strings, including both relative time (e.g., "5 seconds ago", "in 1 hour") and absolute dates (e.g., "Tuesday, November 12, 2024"). It also handles errors gracefully and can be extended for future use cases.
 
 
@@ -32,8 +31,9 @@ console.log(result.timeFromNow); // Output: "in 5 seconds"
 ```
 
 
-Example 2: Relative Time (Future)
+### Example 2: Relative Time (Future)
 
+```javascript
 const { HumanFriendlyDate } = require('human-friendly-date');
 
 // Get the current timestamp and add 1 hour
@@ -45,12 +45,13 @@ const result = HumanFriendlyDate(timestamp);
 
 console.log(result.timeAgo);     // Output: "1 hour ago"
 console.log(result.timeFromNow); // Output: "in 1 hour"
+```
 
 
-
-Formatting Absolute Dates
+### Formatting Absolute Dates
 Use the formatDate function to format a timestamp into a human-readable date in the format: Day of the week, Month Day, Year.
 
+```javascript
 const { HumanFriendlyDate } = require('human-friendly-date');
 
 // Get the current timestamp
@@ -61,22 +62,23 @@ const timestamp = date.getTime();
 const result = HumanFriendlyDate(timestamp);
 
 console.log(result.formattedDate); // Output: "Tuesday, November 12, 2024"
+```
 
 
-
-Handling Invalid Timestamps
+### Handling Invalid Timestamps
 If you pass an invalid timestamp, the function will throw an error:
 
+```javascript
 try {
   HumanFriendlyDate('invalid', 'en');
 } catch (error) {
   console.error(error.message); // Output: "Invalid timestamp"
 }
+```
 
 
 
-
-Methods
+### Methods
 - HumanFriendlyDate(timestamp)
   Returns an object with relative time and formatted date.
 
@@ -89,9 +91,8 @@ Methods
 
 
 
-Returns
+### Returns
 The function returns an object with the following properties:
-
 - timeAgo: A string representing the relative time (e.g., "5 seconds ago").
 - timeFromNow: A string representing the time from now (e.g., "in 5 seconds").
 - formattedDate: A string representing the fully formatted date (e.g., "Tuesday, November 12, 2024").
@@ -99,5 +100,5 @@ The function returns an object with the following properties:
 
 
 
-License
+### License
 MIT
