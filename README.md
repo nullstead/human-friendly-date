@@ -15,8 +15,9 @@ The HumanFriendlyDate function provides a convenient way to format timestamps in
 
 
 
-Example 1: Relative Time (Past)
+### Example 1: Relative Time (Past)
 
+```javascript
 const { HumanFriendlyDate } = require('human-friendly-date');
 
 // Get the current timestamp
@@ -28,7 +29,7 @@ const result = HumanFriendlyDate(timestamp);
 
 console.log(result.timeAgo);     // Output: "5 seconds ago"
 console.log(result.timeFromNow); // Output: "in 5 seconds"
-
+```
 
 
 Example 2: Relative Time (Future)
