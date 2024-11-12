@@ -1,0 +1,23 @@
+{
+  "name": "human-friendly-date",
+  "version": "1.0.0",
+  "description": "A pretty simple library to format dates and times in human-readable formats.",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "date",
+    "time",
+    "human-readable",
+    "format"
+  ],
+  "author": "John Kponyo",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
