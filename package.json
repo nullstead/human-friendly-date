@@ -1,6 +1,6 @@
 {
   "name": "human-friendly-date",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A pretty simple library to format dates and times in human-readable formats.",
   "main": "src/index.js",
   "directories": {
