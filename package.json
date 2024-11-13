@@ -16,8 +16,5 @@
     "format"
   ],
   "author": "John Kponyo",
-  "license": "MIT",
-  "dependencies": {
-    "jest": "^29.7.0"
-  }
+  "license": "MIT"
 }
